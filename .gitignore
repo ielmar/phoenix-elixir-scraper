@@ -32,3 +32,4 @@ phoenix_scraper-*.tar
 npm-debug.log
 /assets/node_modules/
 
+/.env
