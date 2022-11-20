@@ -2,10 +2,10 @@ import Config
 
 # Configure your database
 config :phoenix_scraper, PhoenixScraper.Repo,
-  username: "yefpenas",
-  password: "vUOvE_wd0nwlabLRdzKFgY5uLnkGaTbV",
-  hostname: "rosie.db.elephantsql.com",
-  database: "yefpenas",
+  username: System.get_env("DB_USER"),
+  password: System.get_env("DB_PASS"),
+  hostname: System.get_env("DB_HOST"),
+  database: System.get_env("DB_NAME"),
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 5
